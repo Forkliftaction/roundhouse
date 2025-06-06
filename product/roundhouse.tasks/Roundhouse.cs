@@ -106,6 +106,8 @@ namespace roundhouse.tasks
 
         public string AfterMigrationFolderName { get; set; }
 
+        public string RunLastAfterEverythingScriptsFolderName { get; set; }
+
         public string SchemaName { get; set; }
 
         public string VersionTableName { get; set; }
@@ -258,6 +260,7 @@ namespace roundhouse.tasks
                 { nameof(RunAllAnyTimeScripts), RunAllAnyTimeScripts.to_string() },
                 { nameof(RunBeforeUpFolderName), RunBeforeUpFolderName.to_string() },
                 { nameof(RunFirstAfterUpFolderName), RunFirstAfterUpFolderName.to_string() },
+                { nameof(RunLastAfterEverythingScriptsFolderName), RunLastAfterEverythingScriptsFolderName.to_string() },
                 { nameof(SchemaName), SchemaName.to_string() },
                 { nameof(ScriptsRunErrorsTableName), ScriptsRunErrorsTableName.to_string() },
                 { nameof(ScriptsRunTableName), ScriptsRunTableName.to_string() },

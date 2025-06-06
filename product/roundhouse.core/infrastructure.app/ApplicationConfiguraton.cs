@@ -98,6 +98,10 @@ namespace roundhouse.infrastructure.app
             {
                 configuration_property_holder.PermissionsFolderName = ApplicationParameters.default_permissions_folder_name;
             }
+            if(string.IsNullOrEmpty(configuration_property_holder.RunLastAfterEverythingScriptsFolderName))
+            {
+                configuration_property_holder.RunLastAfterEverythingScriptsFolderName = ApplicationParameters.default_runLastAfterEverything_folder_name;
+            }
             if (string.IsNullOrEmpty(configuration_property_holder.SchemaName))
             {
                 configuration_property_holder.SchemaName = ApplicationParameters.default_roundhouse_schema_name;
